@@ -1,0 +1,509 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"MS Ｐゴシック","MS PGothic",sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+header {
+  display: block;
+}
+
+.Header {
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.Header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  .Header {
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 767px) {
+.Header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+}
+
+.Header_Logo {
+  align-self: center;
+}
+
+.Header_Logo_Image {
+  display: block;
+  height: 20px;
+  width: auto;
+}
+
+@media screen and (max-width: 767px) {
+.Header_Logo_Image_PC {
+  display: none;
+}
+}
+
+.Header_Logo_Image_SP {
+  display: none;
+  height: 16px;
+  width: auto;
+}
+
+@media screen and (max-width: 767px) {
+.Header_Logo_Image_SP {
+  display: block;
+}
+}
+
+.Header_Container {
+  height: 40px;
+  max-width: 100%;
+  margin: 0 32px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1080px) {
+  .Header_Container {
+  height: 21px;
+}
+}
+
+.Header_Container>:last-child {
+  display: inline-flex;
+}
+
+@media screen and (max-width: 767px) {
+  .Header_Container {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+}
+
+.Header_Nav {
+  display: inline-flex;
+}
+
+.Header_Nav_Menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+@media screen and (max-width: 1080px) {
+.Header_Nav_Menu{
+  transform: translate(-100%,0,0);
+}
+}
+
+@media screen and (max-width: 1080px) {
+.Header_Nav_Menu {
+  overflow-y: scroll;
+  position: fixed;
+  top: 60px;
+  left: 100%;
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 75px;
+  transition: transform .5s;
+  background-color: gray;
+  height: 100%;
+}
+}
+
+.Header_Nav_Menu_Link>span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  color: black;
+  margin-right: 45px;
+}
+
+.Header_Nav_Menu_Link>span:first-child {
+  font-family: 'Lato',sans-serif;
+}
+
+.Header_Nav_Menu_button {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 44px;
+  border: none;
+  border-radius: 40px;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0 20px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1080px) {
+.Header_Nav_Humbuger {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 21px;
+  z-index: 100;
+}
+}
+
+@media screen and (max-width: 1080px) {
+.Header_Nav_HumbugerLine {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: gray;
+  border-radius: 10px;
+  top: 50%;
+}
+}
+
+@media screen and (max-width: 1080px) {
+.Header_Nav_Menu {
+  position: fixed;
+  top: 60px;
+  left: 100%;
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 75px;
+  height: 100%;
+  transition: transform .5s;
+}
+}
+
+@media screen and (max-width: 1080px) {
+.Header_Nav_HumbugerLine:first-child{
+  top: 0;
+}
+}
+
+@media screen and (max-width: 1080px) {
+.Header_Nav_HumbugerLine:last-child{
+  top: 100%;
+}
+}
+
+main {
+  display: block;
+}
+
+@media screen and (max-width: 1080px) {
+main {
+  padding-top: 60px;
+}
+}
+
+@media screen and (max-width: 767px) {
+main {
+  padding-top: 52px;
+}
+}
+
+.First_View {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 28px;
+}
+
+@media screen and (max-width: 767px) {
+.First_View {
+  background-image: none;
+  padding-top: 0;
+  padding-bottom: 35px;
+}
+}
+
+.First_View_Top_Image {
+  display: none;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+.First_View_Top_Image {
+  display: block;
+}
+}
+
+.First_View_Container {
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+.First_View_Container {
+  margin-top: -45vw;
+  max-width: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
+
+.First_View_Content {
+  width: fit-content;
+  /* margin: 70px; */
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 767px) {
+.First_View_Content { 
+  margin-bottom: 20px;
+  width: 100%;
+}
+}
+
+.First_View_Title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+.First_View_Content_Title {
+  font-size: 25px;
+  line-height: 36px;
+  margin-left: calc(((100vw - 100%)/2)*-1);
+  margin-right: calc(((100vw - 100%)/2)*-1);
+}
+}
+
+.First_View_Image {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .First_View_Image {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+.First_View_Image img {  
+  width: 27.5%;
+}
+}
+
+.First_View_Image img {
+  margin-right: 8px;
+}
+
+.First_View_Image img:nth-of-type(2) {
+  width: 40%;
+}
+
+.First_View_Image img:last-of-type {
+  margin: 0;
+}
+
+.First_View_button {
+  display: flex;
+  transition: opacity 0.2s;
+}
+
+.First_View_button1 {
+  background-color: orange;
+  color: #fff;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 38px;
+  text-decoration: none;
+  border: none;
+  width: 306px;
+  margin-right: 15px;
+  font-weight: 700;
+}
+
+.First_View_button2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 38px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid lightgray;
+  width: 174px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .First_View_button {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .First_View_button1 {
+    width: 100%;;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .First_View_button2 {
+    display: none;
+  }
+}
+
+.First_View_Comment {
+  color: lightgray;
+  font-size: 12px;
+}
+
+.About_Container {
+  background-color: orange;
+  padding: 44px 0;
+}
+
+.About {
+  max-width: 1140px;
+  padding-left: 44px;
+  padding-right: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  .About{
+    flex-direction: column;
+  }
+}
+
+.Vodeo {
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+
+.About_Video {
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+.About_Video {
+  margin-bottom: 16px;
+  width: 75%;
+}
+}
+
+@media screen and (max-width: 767px) {
+  .About_Video {
+    width: 100%;
+  }
+}
+
+.About_Title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 44px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+.About_Title {
+  width: 75%;
+  margin-left: 0;
+}
+}
+
+@media screen and (max-width: 767px) {
+  .About_Title {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.About_Title h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 54px;
+}
+
+@media screen and (max-width: 767px) {
+  .About_Title h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.About_Title p {
+  color: #fff;
+  text-decoration: left;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.About_Button {
+  display: flex;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.About_Button>img {
+  margin-right: 5px;
+}
+
+.Fixed_Footer {
+  bottom: 28px;
+  position: fixed;
+  right: 4px;
+  z-index: 10;
+}
+
+.Fixed_Footer img {
+  display: block;
+  max-width: 367px;
+}
